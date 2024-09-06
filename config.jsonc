@@ -1,0 +1,44 @@
+{
+    "DiscordToken": "xxx",
+
+    "VerificationSystem": {
+        // Upon joining
+        "InitialRole": "1280952100129345569",
+        "WelcomeMessage": "Welcome to server! Please click the button below to verify!",
+        "VerifyButtonText": "Verify",
+
+        // When user clicks to verify
+        "FormTitle": "Tell us about yourself...",
+        "FormFields": [
+            // Type can be ShortInput or ParagraphInput and decides whether the modal
+            // should have a one line or multi line box
+            { "Label": "What is your name?", "Type": "ShortInput", "Placeholder": "asdfasd" },
+            { "Label": "How old are you?", "Type": "ShortInput", "Placeholder": "owo" },
+            { "Label": "Why did you join?", "Type": "ParagraphInput", "Placeholder": "uwu", "MinLength": 10, "MaxLength": 1000 }
+        ],  
+        // Where the form gets sent for staff
+        "FormSubmitChannel": "1281533457381462017", 
+        // Message to present to the user upon submitting the form
+        "FormSubmitUserMessage": "Thank you! We will get to you shortly.",
+        "FormEmbedDescription": "Introduction of user $USER",
+
+        // The buttons for staff
+        "ApproveButtonText": "Approve",
+        "DenyButtonText": "Deny",
+        "BanButtonText": "Ban",
+
+        // If they are approved
+        "ApprovedRole": "1280952160229527564",
+        // $USER gets expanded to the name of the user
+        "ApprovedAnnouncementMessage": "Everyone welcome our newest member $USER!!! :3",
+        "ApprovedAnnouncementChannel": "1280948927486492738",
+        "ApprovedFormChannel": "1280952315217707142",
+
+        // If they are denied
+        // $STAFF gets expanded to the staff name that made the action
+        // $USER gets expanded to the name of the user
+        // $REASON gets expanded to the reason the staff member entered
+        "DenyDmMessage": "Hey $USER, your verification was denied by $STAFF for reason: $REASON",
+    } 
+}
+
